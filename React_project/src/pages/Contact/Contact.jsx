@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from 'react'
-=======
-import React, { useState } from 'react'
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
 import axios from 'axios'
 import "./contact.css"
 import image from '../../image/logo.jpg'
@@ -11,20 +7,14 @@ import image from '../../image/logo.jpg'
 
 let initialValue = {
   name: "",
-<<<<<<< HEAD
   mobile:"",
-=======
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
   email:""
 }
 const Contact = () => {
   const [data, setData] = useState(initialValue);
-<<<<<<< HEAD
   const [showdata, setShowData] = useState([]);
     const [updateId,setUpdateId]=useState(null)
 
-=======
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
 
 
   const userData = (e) => {
@@ -39,23 +29,18 @@ const Contact = () => {
 
   const postData = async() => {
 try {
-<<<<<<< HEAD
   let pres = await axios.post(
        "https://renderserver-z3g5.onrender.com/data",
        data
   );
 
   getData();
-=======
-  let pres = await axios.post("http://localhost:8080/data", data);
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
 
 } catch (error) {
 console.log(error);
 }
   }
 
-<<<<<<< HEAD
   // ------------------get Data--------------------
   const getData = async () => {
      try {
@@ -143,14 +128,6 @@ setUpdateId(null);
           getData();
      },[]);
 
-=======
-
-//   // ***************subit Data********************
-  const submitdata = (e) => {
-    e.preventDefault();
-postData();
-  }
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
   return (
        <div>
             <h1 className="heading my-5 text-4xl font-semibold text-center">
@@ -165,15 +142,7 @@ postData();
                       <h1 className="text-3xl font-semibold text-center">
                            Registration
                       </h1>
-<<<<<<< HEAD
 
-=======
-                      <img
-                           className="m-auto w-12 h-12 rounded-full"
-                           src={image}
-                           alt=""
-                      />
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
                       <form action="">
                            <label htmlFor="">Name</label>
                            <br />
@@ -182,11 +151,7 @@ postData();
                                 name="name"
                                 value={data.name}
                                 onChange={userData}
-<<<<<<< HEAD
 
-=======
-                                // placeholder="Enter your Name"
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
                            />
                            <br />
                            <label htmlFor="">Mobile Number</label>
@@ -196,11 +161,7 @@ postData();
                                 name="mobile"
                                 value={data.mobile}
                                 onChange={userData}
-<<<<<<< HEAD
 
-=======
-                                // placeholder="Enter your Mobile"
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
                            />
                            <br />
                            <label htmlFor="">Email</label>
@@ -210,11 +171,7 @@ postData();
                                 name="email"
                                 value={data.email}
                                 onChange={userData}
-<<<<<<< HEAD
 
-=======
-                                // placeholder="Enter your Email"
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
                            />
                            <br />
                            <button
@@ -225,7 +182,6 @@ postData();
                       </form>
                  </div>
             </div>
-<<<<<<< HEAD
 
 
 
@@ -270,8 +226,6 @@ postData();
               </table>
          </div>
 
-=======
->>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
        </div>
   );
  }
