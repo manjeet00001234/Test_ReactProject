@@ -11,14 +11,21 @@
     "server": "json-server --watch db.json --port 8080"
   },
   "dependencies": {
+<<<<<<< HEAD
     "antd": "^5.18.1",
     "aos": "^2.3.4",
+=======
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
     "axios": "^1.7.2",
     "json-server": "^1.0.0-beta.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^6.23.1",
     "react-toastify": "^10.0.5"
+=======
+    "react-router-dom": "^6.23.1"
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

@@ -3,6 +3,7 @@ import './home.css'
 import image from '../../image/hero.jpg'
 import Gellery from '../Gellery/Gellery'
 import Contact from '../Contact/Contact'
+<<<<<<< HEAD
 import ShowData from '../ShowData/ShowData'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -68,13 +69,27 @@ const Home = () => {
       <Gellery />
       <Contact/>
       {/* <ShowData/> */}
+=======
+
+const Home = () => {
+  return (
+    <div className='home_contaner'>
+
+      <img src={image} alt="" />
+      <Gellery />
+      <Contact/>
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
     </div>
   )
 }
 
+<<<<<<< HEAD
 export default Home
 
 
 
 
 
+=======
+export default Home
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67

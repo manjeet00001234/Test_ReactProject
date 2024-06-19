@@ -2,10 +2,13 @@
 align-items: center;
 padding: 10px 0;
  /* background: linear-gradient(to bottom, #0d0d2b, #000000); */
+<<<<<<< HEAD
  position: sticky;
  top: 0%;
  left: 0%;
  z-index: 1;
+=======
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
 }
 
 .logo img{
