@@ -14,7 +14,7 @@ const Contact = () => {
   const [data, setData] = useState(initialValue);
   const [showdata, setShowData] = useState([]);
     const [updateId,setUpdateId]=useState(null)
-  
+
 
 
   const userData = (e) => {
@@ -29,7 +29,10 @@ const Contact = () => {
 
   const postData = async() => {
 try {
-  let pres = await axios.post("http://localhost:8080/data", data);
+  let pres = await axios.post(
+       "https://renderserver-z3g5.onrender.com/data",
+       data
+  );
 
   getData();
 
@@ -41,10 +44,12 @@ console.log(error);
   // ------------------get Data--------------------
   const getData = async () => {
      try {
-         let gres = await axios.get("http://localhost:8080/data");
+         let gres = await axios.get(
+              "https://renderserver-z3g5.onrender.com/data"
+         );
          setShowData(gres.data)
-         
-         
+
+
      } catch (error) {
          console.log(error);
      }
@@ -54,10 +59,12 @@ console.log(error);
 
  const deleteData= async(id)=>{
 try {
- let dres=await axios.delete(`http://localhost:8080/data/${id}`)
+ let dres = await axios.delete(
+      `https://renderserver-z3g5.onrender.com/data/${id}`
+ );
 alert("deleted data");
  getData()
- 
+
 } catch (error) {
  console.log(error);
 }
@@ -69,13 +76,16 @@ alert("deleted data");
 
    const pathData=async()=>{
      try {
-         let fres=await axios.patch(`http://localhost:8080/data/${updateId}`,data)
+         let fres = await axios.patch(
+              `https://renderserver-z3g5.onrender.com/data/${updateId}`,
+              data
+         );
          getData();
      } catch (error) {
          console.log(error);
      }
  }
- 
+
  // -----------------------inbox value update---------------------------
 
  const handleUpdate=(id)=>{
@@ -87,7 +97,7 @@ setUpdateId(id);
 }
  }
 
- 
+
 
 
 //   // ***************subit Data********************
@@ -101,7 +111,7 @@ setUpdateId(null);
 
     }else{
 
-   
+
          postData();
          alert("added")
      setData(initialValue);
@@ -117,7 +127,7 @@ setUpdateId(null);
      useEffect(()=>{
           getData();
      },[]);
-    
+
   return (
        <div>
             <h1 className="heading my-5 text-4xl font-semibold text-center">
@@ -132,7 +142,7 @@ setUpdateId(null);
                       <h1 className="text-3xl font-semibold text-center">
                            Registration
                       </h1>
-                    
+
                       <form action="">
                            <label htmlFor="">Name</label>
                            <br />
@@ -141,7 +151,7 @@ setUpdateId(null);
                                 name="name"
                                 value={data.name}
                                 onChange={userData}
-                                
+
                            />
                            <br />
                            <label htmlFor="">Mobile Number</label>
@@ -151,7 +161,7 @@ setUpdateId(null);
                                 name="mobile"
                                 value={data.mobile}
                                 onChange={userData}
-                               
+
                            />
                            <br />
                            <label htmlFor="">Email</label>
@@ -161,7 +171,7 @@ setUpdateId(null);
                                 name="email"
                                 value={data.email}
                                 onChange={userData}
-                                
+
                            />
                            <br />
                            <button
@@ -183,7 +193,7 @@ setUpdateId(null);
             <div className='main_table'>
           <h1>Registration Data</h1>
               <table>
-               
+
                    <thead>
                         <tr>
                              <th>Id</th>
@@ -206,7 +216,7 @@ setUpdateId(null);
                                 <td data-column="Action">
                                    <button onClick={()=>handleUpdate(item.id)}>Edit</button>
                                    <button onClick={()=>deleteData(item.id)}>Delete</button>
-                                
+
                                 </td>
                              </tr>
                         );
