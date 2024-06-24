@@ -3,6 +3,10 @@ import './home.css'
 import image from '../../image/hero.jpg'
 import Gellery from '../Gellery/Gellery'
 import Contact from '../Contact/Contact'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 import ShowData from '../ShowData/ShowData'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -68,13 +72,36 @@ const Home = () => {
       <Gellery />
       <Contact/>
       {/* <ShowData/> */}
+<<<<<<< HEAD
+=======
+=======
+
+const Home = () => {
+  return (
+    <div className='home_contaner'>
+
+      <img src={image} alt="" />
+      <Gellery />
+      <Contact/>
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
     </div>
   )
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 export default Home
 
 
 
 
 
+<<<<<<< HEAD
+=======
+=======
+export default Home
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306

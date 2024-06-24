@@ -14,7 +14,11 @@ const Contact = () => {
   const [data, setData] = useState(initialValue);
   const [showdata, setShowData] = useState([]);
     const [updateId,setUpdateId]=useState(null)
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 
 
   const userData = (e) => {
@@ -29,7 +33,14 @@ const Contact = () => {
 
   const postData = async() => {
 try {
+<<<<<<< HEAD
   let pres = await axios.post("http://localhost:8080/data", data);
+=======
+  let pres = await axios.post(
+       "https://renderserver-z3g5.onrender.com/data",
+       data
+  );
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 
   getData();
 
@@ -41,10 +52,19 @@ console.log(error);
   // ------------------get Data--------------------
   const getData = async () => {
      try {
+<<<<<<< HEAD
          let gres = await axios.get("http://localhost:8080/data");
          setShowData(gres.data)
          
          
+=======
+         let gres = await axios.get(
+              "https://renderserver-z3g5.onrender.com/data"
+         );
+         setShowData(gres.data)
+
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
      } catch (error) {
          console.log(error);
      }
@@ -54,10 +74,19 @@ console.log(error);
 
  const deleteData= async(id)=>{
 try {
+<<<<<<< HEAD
  let dres=await axios.delete(`http://localhost:8080/data/${id}`)
 alert("deleted data");
  getData()
  
+=======
+ let dres = await axios.delete(
+      `https://renderserver-z3g5.onrender.com/data/${id}`
+ );
+alert("deleted data");
+ getData()
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 } catch (error) {
  console.log(error);
 }
@@ -69,13 +98,24 @@ alert("deleted data");
 
    const pathData=async()=>{
      try {
+<<<<<<< HEAD
          let fres=await axios.patch(`http://localhost:8080/data/${updateId}`,data)
+=======
+         let fres = await axios.patch(
+              `https://renderserver-z3g5.onrender.com/data/${updateId}`,
+              data
+         );
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
          getData();
      } catch (error) {
          console.log(error);
      }
  }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
  // -----------------------inbox value update---------------------------
 
  const handleUpdate=(id)=>{
@@ -87,7 +127,11 @@ setUpdateId(id);
 }
  }
 
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 
 
 //   // ***************subit Data********************
@@ -101,7 +145,11 @@ setUpdateId(null);
 
     }else{
 
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
          postData();
          alert("added")
      setData(initialValue);
@@ -117,7 +165,11 @@ setUpdateId(null);
      useEffect(()=>{
           getData();
      },[]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
   return (
        <div>
             <h1 className="heading my-5 text-4xl font-semibold text-center">
@@ -132,7 +184,11 @@ setUpdateId(null);
                       <h1 className="text-3xl font-semibold text-center">
                            Registration
                       </h1>
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
                       <form action="">
                            <label htmlFor="">Name</label>
                            <br />
@@ -141,7 +197,11 @@ setUpdateId(null);
                                 name="name"
                                 value={data.name}
                                 onChange={userData}
+<<<<<<< HEAD
                                 
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
                            />
                            <br />
                            <label htmlFor="">Mobile Number</label>
@@ -151,7 +211,11 @@ setUpdateId(null);
                                 name="mobile"
                                 value={data.mobile}
                                 onChange={userData}
+<<<<<<< HEAD
                                
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
                            />
                            <br />
                            <label htmlFor="">Email</label>
@@ -161,7 +225,11 @@ setUpdateId(null);
                                 name="email"
                                 value={data.email}
                                 onChange={userData}
+<<<<<<< HEAD
                                 
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
                            />
                            <br />
                            <button
@@ -183,7 +251,11 @@ setUpdateId(null);
             <div className='main_table'>
           <h1>Registration Data</h1>
               <table>
+<<<<<<< HEAD
                
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
                    <thead>
                         <tr>
                              <th>Id</th>
@@ -206,7 +278,11 @@ setUpdateId(null);
                                 <td data-column="Action">
                                    <button onClick={()=>handleUpdate(item.id)}>Edit</button>
                                    <button onClick={()=>deleteData(item.id)}>Delete</button>
+<<<<<<< HEAD
                                 
+=======
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
                                 </td>
                              </tr>
                         );

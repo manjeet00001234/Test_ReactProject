@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+// import React from 'react'
+
+// const Footer = () => {
+//   return (
+//     <div>Footer</div>
+//   )
+// }
+
+// export default Footer
+
+
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 
 import React from "react";
 import "./footer.css";

@@ -1,4 +1,8 @@
 import React from 'react'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 import "./gellery.css"
 import img01 from '../../image/g_01.jpeg'
 import img02 from '../../image/g_02.jpeg'
@@ -45,6 +49,15 @@ const Gellery = () => {
 
 
     </div>
+<<<<<<< HEAD
+=======
+=======
+
+const Gellery = () => {
+  return (
+    <div>Gellery</div>
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
   )
 }
 

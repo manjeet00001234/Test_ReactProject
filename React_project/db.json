@@ -1,10 +1,68 @@
 {
   "data": [
     {
+<<<<<<< HEAD
       "id": "26b9",
       "name": "manjeet singh",
       "mobile": "86868763789",
       "email": "majeet@gmail.com"
+=======
+<<<<<<< HEAD
+      "id": "f7b0",
+      "name": "manjeet",
+      "mobile": "9999999900",
+      "email": "manjeet@gmail.com"
+    },
+    {
+      "id": "991f",
+      "name": "manjeet",
+      "mobile": "9999999999",
+      "email": "manjeet@gmail.com"
+    },
+    {
+      "id": "2f70",
+      "name": "",
+      "mobile": "",
+      "email": ""
+=======
+      "id": "689d"
+    },
+    {
+      "id": "db97",
+      "name": "manjeet singh",
+      "mobile": "86868763789",
+      "email": "majeet@gmail.com"
+    },
+    {
+      "id": "5542",
+      "name": "",
+      "email": ""
+    },
+    {
+      "id": "877f",
+      "name": "manjeet singh",
+      "email": "majeet@gmail.com",
+      "mobile": "86868763789"
+    },
+    {
+      "id": "edd8",
+      "name": "manjeet singh",
+      "email": "majeet@gmail.com",
+      "mobile": "86868763789"
+    },
+    {
+      "id": "7432",
+      "name": "deepender singh",
+      "email": "abc@gmail.com",
+      "mobile": "86868763789"
+    },
+    {
+      "id": "aae2",
+      "name": "fdgdgf",
+      "email": "dfghdfgh",
+      "mobile": "86868763789"
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
     }
   ]
 }

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 
 
 
@@ -6,4 +10,16 @@
 .home_contaner{
   width: 100%;
   
+<<<<<<< HEAD
+=======
+=======
+.home_contaner{
+    width: 100%;
+    /* height: 90vh; */
+    /* margin: 150px 0; */
+}
+.home_contaner img{
+    width: 100%;
+>>>>>>> 4fad55e698815246da7c4fd0b544b107d8218f67
+>>>>>>> b2c1a811e2a5f291170d625274d4d33e7c883306
 }
